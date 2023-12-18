@@ -1,0 +1,145 @@
+@use "base" as *;
+@use "pages" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--Black, #232536);
+  nav {
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .KKK {
+      display: flex;
+      align-items: center;
+      gap: 84px;
+      .nav-items {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        .nav-item a {
+          color: #fff;
+          font-family: Inter;
+          font-size: 16px;
+          &:hover {
+            color: #e0e0e0;
+            transition: 0.2s;
+          }
+        }
+      }
+      button {
+        padding: 16px 48px;
+        border: none;
+        background-color: #fff;
+        color: #232536;
+        font-family: Inter;
+        font-size: 18px;
+        &:hover {
+          transition: 0.4s;
+          background-color: #edebeb;
+        }
+      }
+    }
+  }
+}
+
+main {
+  margin-top: 77px;
+}
+
+.hero {
+  background: url(../images/hero-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 720px;
+  .hero-content {
+    padding-top: 128px;
+    p {
+      color: var(--Light, #fff);
+      font-family: Inter;
+      font-size: 16px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding-bottom: 24px;
+    }
+    h1 {
+      max-width: 803px;
+      color: #fff;
+      font-family: Inter;
+      font-size: 56px;
+      letter-spacing: -2px;
+      padding-bottom: 24px;
+    }
+    h6 {
+      color: #fff;
+      font-family: Inter;
+      font-size: 16px;
+      o {
+        color: var(--Yellow, #ffd050);
+
+        /* Body 1 */
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+      }
+      padding-bottom: 16px;
+    }
+    h5 {
+      color: var(--Light, #fff);
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 175% */
+      max-width: 599px;
+      padding-bottom: 48px;
+    }
+    button {
+      padding: 16px 48px;
+      color: var(--Black, #232536);
+      font-family: sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 133.333% */
+      background: var(--Yellow, #ffd050);
+      &:hover {
+        background-color: #f9d675;
+        transition: 0.3s;
+      }
+    }
+  }
+}
