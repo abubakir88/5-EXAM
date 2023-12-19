@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--Black, #232536);
+}
+header nav {
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .KKK {
+  display: flex;
+  align-items: center;
+  gap: 84px;
+}
+header nav .KKK .nav-items {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+header nav .KKK .nav-items .nav-item a {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+}
+header nav .KKK .nav-items .nav-item a:hover {
+  color: #e0e0e0;
+  transition: 0.2s;
+}
+header nav .KKK button {
+  padding: 16px 48px;
+  border: none;
+  background-color: #fff;
+  color: #232536;
+  font-family: Inter;
+  font-size: 18px;
+}
+header nav .KKK button:hover {
+  transition: 0.4s;
+  background-color: #edebeb;
+}
+
+main {
+  margin-top: 77px;
+}
+
+.only {
+  padding: 64px 0px 158px 0;
+}
+.only .only-content {
+  display: grid;
+  place-items: center;
+  gap: 70px;
+}
+.only .only-content h1 {
+  color: #232536;
+  text-align: center;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 133.333% */
+  letter-spacing: -2px;
+}
+.only .only-content .inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+}
+.only .only-content .inputs input {
+  padding: 24px;
+  outline: none;
+  width: 768px;
+  border-radius: 2px;
+  border: 1px solid rgba(109, 110, 118, 0.5);
+}
+.only .only-content a {
+  text-align: center;
+  color: var(--Black, #232536);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  background: var(--Yellow, #ffd050);
+  padding: 16px 0;
+  width: 768px;
+}
+.only .only-content a:hover {
+  background-color: #fbd56d;
+  transition: 0.2s;
+}
+
+footer {
+  margin-top: 72px;
+  background: #232536;
+}
+footer .foot-texts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 54px 0;
+}
+footer .foot-texts .text {
+  max-width: 300px;
+}
+footer .foot-texts .text p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  opacity: 0.7;
+}
+footer .foot-texts .social_media {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+footer .foot-texts .social_media svg:hover path {
+  fill: #e0e0e0;
+  transition: 0.2s;
+}/*# sourceMappingURL=index.css.map */

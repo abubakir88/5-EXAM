@@ -81,67 +81,81 @@ main {
   margin-top: 77px;
 }
 
-.hero {
-  background: url(../images/hero-background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 720px;
+.only {
+  padding: 64px 0px 158px 0;
 }
-.hero .hero-content {
-  padding-top: 128px;
+.only .only-content {
+  display: grid;
+  place-items: center;
+  gap: 70px;
 }
-.hero .hero-content p {
-  color: var(--Light, #fff);
+.only .only-content h1 {
+  color: #232536;
+  text-align: center;
   font-family: Inter;
-  font-size: 16px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  padding-bottom: 24px;
-}
-.hero .hero-content h1 {
-  max-width: 803px;
-  color: #fff;
-  font-family: Inter;
-  font-size: 56px;
-  letter-spacing: -2px;
-  padding-bottom: 24px;
-}
-.hero .hero-content h6 {
-  color: #fff;
-  font-family: Inter;
-  font-size: 16px;
-  padding-bottom: 16px;
-}
-.hero .hero-content h6 o {
-  color: var(--Yellow, #ffd050);
-  /* Body 1 */
-  font-family: Inter;
-  font-size: 16px;
+  font-size: 48px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
+  font-weight: 700;
+  line-height: 64px; /* 133.333% */
+  letter-spacing: -2px;
 }
-.hero .hero-content h5 {
-  color: var(--Light, #fff);
+.only .only-content .inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+}
+.only .only-content .inputs input {
+  padding: 24px;
+  outline: none;
+  width: 768px;
+  border-radius: 2px;
+  border: 1px solid rgba(109, 110, 118, 0.5);
+}
+.only .only-content a {
+  text-align: center;
+  color: var(--Black, #232536);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  background: var(--Yellow, #ffd050);
+  padding: 16px 0;
+  width: 768px;
+}
+.only .only-content a:hover {
+  background-color: #fbd56d;
+  transition: 0.2s;
+}
+
+footer {
+  margin-top: 72px;
+  background: #232536;
+}
+footer .foot-texts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 54px 0;
+}
+footer .foot-texts .text {
+  max-width: 300px;
+}
+footer .foot-texts .text p {
+  color: #fff;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 175% */
-  max-width: 599px;
-  padding-bottom: 48px;
+  opacity: 0.7;
 }
-.hero .hero-content button {
-  padding: 16px 48px;
-  color: var(--Black, #232536);
-  font-family: sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px; /* 133.333% */
-  background: var(--Yellow, #ffd050);
+footer .foot-texts .social_media {
+  display: flex;
+  align-items: center;
+  gap: 26px;
 }
-.hero .hero-content button:hover {
-  background-color: #f9d675;
-  transition: 0.3s;
-}/*# sourceMappingURL=style.css.map */
+footer .foot-texts .social_media svg:hover path {
+  fill: #e0e0e0;
+  transition: 0.2s;
+}/*# sourceMappingURL=login.css.map */

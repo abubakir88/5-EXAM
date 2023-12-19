@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--Black, #232536);
+}
+header nav {
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .KKK {
+  display: flex;
+  align-items: center;
+  gap: 84px;
+}
+header nav .KKK .nav-items {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+header nav .KKK .nav-items .nav-item a {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+}
+header nav .KKK .nav-items .nav-item a:hover {
+  color: #e0e0e0;
+  transition: 0.2s;
+}
+header nav .KKK button {
+  padding: 16px 48px;
+  border: none;
+  background-color: #fff;
+  color: #232536;
+  font-family: Inter;
+  font-size: 18px;
+}
+header nav .KKK button:hover {
+  transition: 0.4s;
+  background-color: #edebeb;
+}
+
+main {
+  margin-top: 77px;
+}
+
+.hero {
+  background: url(../images/hero-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 720px;
+}
+.hero .hero-content {
+  padding-top: 128px;
+}
+.hero .hero-content p {
+  color: var(--Light, #fff);
+  font-family: Inter;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-bottom: 24px;
+}
+.hero .hero-content h1 {
+  max-width: 803px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 56px;
+  letter-spacing: -2px;
+  padding-bottom: 24px;
+}
+.hero .hero-content h6 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  padding-bottom: 16px;
+}
+.hero .hero-content h6 o {
+  color: var(--Yellow, #ffd050);
+  /* Body 1 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.hero .hero-content h5 {
+  color: var(--Light, #fff);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  max-width: 599px;
+  padding-bottom: 48px;
+}
+.hero .hero-content a {
+  padding: 16px 48px;
+  color: var(--Black, #232536);
+  font-family: sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+  background: var(--Yellow, #ffd050);
+}
+.hero .hero-content a:hover {
+  background-color: #fbdc86;
+  transition: 0.3s;
+}
+
+.latest .latest-content {
+  padding-top: 94px;
+}
+.latest .latest-content h2 {
+  font-size: 36px;
+}
+.latest .latest-content .cards {
+  padding-top: 64px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 66px;
+  row-gap: 60px;
+}
+.latest .latest-content .cards .card {
+  max-width: 404px;
+}
+.latest .latest-content .cards .card .card-texts p {
+  padding-top: 32px;
+  color: var(--Dark-Grey, #4c4c4c);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+.latest .latest-content .cards .card .card-texts p john {
+  color: var(--Purple, #592ea9);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.latest .latest-content .cards .card .card-texts h3 {
+  max-width: 405px;
+  color: var(--Black, #232536);
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 142.857% */
+  letter-spacing: -1px;
+  padding: 16px 0;
+}
+.latest .latest-content .cards .card .card-texts h6 {
+  max-width: 405px;
+  color: var(--Black, #232536);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  opacity: 0.7;
+}
+.latest .latest-content hr {
+  opacity: 0.3;
+  background: #6d6e76;
+}
+
+.category {
+  padding-top: 69px;
+}
+.category .category_content h2 {
+  color: var(--Black, #232536);
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 133.333% */
+  letter-spacing: -2px;
+  padding-bottom: 72px;
+  text-align: center;
+}
+.category .category_content .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.category .category_content .cards .card {
+  border: 1px solid var(--Medium-grey, #6d6e76);
+}
+.category .category_content .cards .card:hover {
+  border-color: #ffd050;
+  background: var(--Yellow, #ffd050);
+  transition: 0.4s;
+}
+.category .category_content .cards .card .card-texts {
+  padding: 32px;
+}
+.category .category_content .cards .card .card-texts h3 {
+  color: var(--Black, #232536);
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 142.857% */
+  letter-spacing: -1px;
+}
+.category .category_content .cards .card .card-texts p {
+  max-width: 232px;
+  color: var(--Medium-grey, #6d6e76);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+.category .category_content .cards .card .card-texts svg {
+  background-color: #fbf6ea;
+  border-radius: 8px;
+}
+
+footer {
+  margin-top: 72px;
+  background: #232536;
+}
+footer .foot-texts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 54px 0;
+}
+footer .foot-texts .text {
+  max-width: 300px;
+}
+footer .foot-texts .text p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  opacity: 0.7;
+}
+footer .foot-texts .social_media {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+footer .foot-texts .social_media svg:hover path {
+  fill: #e0e0e0;
+}/*# sourceMappingURL=style.css.map */
